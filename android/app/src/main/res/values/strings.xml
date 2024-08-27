@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="client_id">jk38pww6i4</string>
+    <string name="client_secret">WfrxNW49dcdCD3r8ZKxrrEmGYfVbT9ThX0P5vI9y</string>
+    <string name="client_name">naggama</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>
