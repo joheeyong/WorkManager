@@ -1,6 +1,7 @@
 import Flutter
 import UIKit
 import workmanager
+import home_widget
 import BackgroundTasks
 
 @UIApplicationMain
@@ -16,6 +17,12 @@ import BackgroundTasks
       
       WorkmanagerPlugin.setPluginRegistrantCallback { registry in
         GeneratedPluginRegistrant.register(with: registry)
+      }
+      
+      if #available(iOS 17, *) {
+        HomeWidgetBackgroundWorker.setPluginRegistrantCallback { registry in
+          GeneratedPluginRegistrant.register(with: registry)
+        }
       }
 
       UIApplication.shared.setMinimumBackgroundFetchInterval(TimeInterval(60 * 15))

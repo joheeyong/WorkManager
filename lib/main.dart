@@ -45,6 +45,12 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
 
+    Workmanager().registerOneOffTask(
+      "work.taskName",
+      "work.taskName",
+      initialDelay: const Duration(seconds: 10),
+    );
+
     // One off task registration
     if(Platform.isAndroid) {
       Workmanager().registerOneOffTask(

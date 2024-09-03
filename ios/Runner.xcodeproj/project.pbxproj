@@ -16,6 +16,13 @@
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		A70CD3184837A14843EFB3AD /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AECD6D9687073D53292BD /* Pods_Runner.framework */; };
+		D8B1E9C72C86AC9B00E3C68F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B1E9C62C86AC9B00E3C68F /* WidgetKit.framework */; };
+		D8B1E9C92C86AC9B00E3C68F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B1E9C82C86AC9B00E3C68F /* SwiftUI.framework */; };
+		D8B1E9D82C86AC9D00E3C68F /* NesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D8B1E9C52C86AC9B00E3C68F /* NesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8B1E9E32C86ACCC00E3C68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B1E9DE2C86ACCC00E3C68F /* Assets.xcassets */; };
+		D8B1E9E42C86ACCC00E3C68F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8B1E9DF2C86ACCC00E3C68F /* Info.plist */; };
+		D8B1E9E52C86ACCC00E3C68F /* NesWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1E9E02C86ACCC00E3C68F /* NesWidgets.swift */; };
+		D8B1E9E62C86ACCC00E3C68F /* NesWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1E9E12C86ACCC00E3C68F /* NesWidgetsBundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 97C146ED1CF9000F007C117D;
 			remoteInfo = Runner;
+		};
+		D8B1E9D62C86AC9D00E3C68F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8B1E9C42C86AC9B00E3C68F;
+			remoteInfo = NesWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,6 +51,17 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B1E9D92C86AC9D00E3C68F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8B1E9D82C86AC9D00E3C68F /* NesWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -63,6 +88,13 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B1E9C52C86AC9B00E3C68F /* NesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B1E9C62C86AC9B00E3C68F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D8B1E9C82C86AC9B00E3C68F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D8B1E9DE2C86ACCC00E3C68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8B1E9DF2C86ACCC00E3C68F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B1E9E02C86ACCC00E3C68F /* NesWidgets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NesWidgets.swift; sourceTree = "<group>"; };
+		D8B1E9E12C86ACCC00E3C68F /* NesWidgetsBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NesWidgetsBundle.swift; sourceTree = "<group>"; };
 		DF2B3CD9FF02EA313B51EBCF /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		E72D7905930D79947E059175 /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +116,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8B1E9C22C86AC9B00E3C68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B1E9C92C86AC9B00E3C68F /* SwiftUI.framework in Frameworks */,
+				D8B1E9C72C86AC9B00E3C68F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +133,8 @@
 			children = (
 				279AECD6D9687073D53292BD /* Pods_Runner.framework */,
 				33CBB4EA859A9D113FAFE810 /* Pods_RunnerTests.framework */,
+				D8B1E9C62C86AC9B00E3C68F /* WidgetKit.framework */,
+				D8B1E9C82C86AC9B00E3C68F /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +161,7 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
+				D8B1E9E22C86ACCC00E3C68F /* NesWidgets */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
@@ -132,6 +176,7 @@
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				331C8081294A63A400263BE5 /* RunnerTests.xctest */,
+				D8B1E9C52C86AC9B00E3C68F /* NesWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +194,17 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		D8B1E9E22C86ACCC00E3C68F /* NesWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				D8B1E9DE2C86ACCC00E3C68F /* Assets.xcassets */,
+				D8B1E9DF2C86ACCC00E3C68F /* Info.plist */,
+				D8B1E9E02C86ACCC00E3C68F /* NesWidgets.swift */,
+				D8B1E9E12C86ACCC00E3C68F /* NesWidgetsBundle.swift */,
+			);
+			path = NesWidgets;
 			sourceTree = "<group>";
 		};
 		EBC3BEA8FECB4E443681A997 /* Pods */ = {
@@ -185,11 +241,6 @@
 			productName = RunnerTests;
 			productReference = 331C8081294A63A400263BE5 /* RunnerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-			SystemCapabilities = {
-            	com.apple.BackgroundModes = {
-            		enabled = 1;
-            	};
-            };
 		};
 		97C146ED1CF9000F007C117D /* Runner */ = {
 			isa = PBXNativeTarget;
@@ -203,15 +254,34 @@
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				59B4A960AFF6D28F69CD617D /* [CP] Embed Pods Frameworks */,
+				D8B1E9D92C86AC9D00E3C68F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8B1E9D72C86AC9D00E3C68F /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D8B1E9C42C86AC9B00E3C68F /* NesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8B1E9DD2C86AC9D00E3C68F /* Build configuration list for PBXNativeTarget "NesWidgetExtension" */;
+			buildPhases = (
+				D8B1E9C12C86AC9B00E3C68F /* Sources */,
+				D8B1E9C22C86AC9B00E3C68F /* Frameworks */,
+				D8B1E9C32C86AC9B00E3C68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NesWidgetExtension;
+			productName = NesWidgetExtension;
+			productReference = D8B1E9C52C86AC9B00E3C68F /* NesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -220,6 +290,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
@@ -230,6 +301,9 @@
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
+					};
+					D8B1E9C42C86AC9B00E3C68F = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
@@ -248,6 +322,7 @@
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
 				331C8080294A63A400263BE5 /* RunnerTests */,
+				D8B1E9C42C86AC9B00E3C68F /* NesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -266,8 +341,17 @@
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				D8B1E9E42C86ACCC00E3C68F /* Info.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				D8B1E9E32C86ACCC00E3C68F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B1E9C32C86AC9B00E3C68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +465,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B1E9E62C86ACCC00E3C68F /* NesWidgetsBundle.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				D8B1E9E52C86ACCC00E3C68F /* NesWidgets.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B1E9C12C86AC9B00E3C68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +486,11 @@
 			isa = PBXTargetDependency;
 			target = 97C146ED1CF9000F007C117D /* Runner */;
 			targetProxy = 331C8085294A63A400263BE5 /* PBXContainerItemProxy */;
+		};
+		D8B1E9D72C86AC9D00E3C68F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8B1E9C42C86AC9B00E3C68F /* NesWidgetExtension */;
+			targetProxy = D8B1E9D62C86AC9D00E3C68F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -696,6 +794,123 @@
 			};
 			name = Release;
 		};
+		D8B1E9DA2C86AC9D00E3C68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5HFR4DX62;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.workmanager.NesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8B1E9DB2C86AC9D00E3C68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5HFR4DX62;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.workmanager.NesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8B1E9DC2C86AC9D00E3C68F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5HFR4DX62;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.workmanager.NesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -725,6 +940,16 @@
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8B1E9DD2C86AC9D00E3C68F /* Build configuration list for PBXNativeTarget "NesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8B1E9DA2C86AC9D00E3C68F /* Debug */,
+				D8B1E9DB2C86AC9D00E3C68F /* Release */,
+				D8B1E9DC2C86AC9D00E3C68F /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
